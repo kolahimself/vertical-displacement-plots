@@ -1,7 +1,7 @@
 # Vertical-Displacement-Plots
-🌟 This repository contains various python scripts and notebooks that can be used to demonstrate the effect of static and dynamic loads in high rise buildings. Calculated gravity load deformations in buildings can vary depending upon the analysis technique used (e.g with or without construction stage analysis). Accurate modeling of vertical displacements can be critical in tall buildings.
+🌟 This repository contains various python scripts and notebooks that can be used to demonstrate the effect of static and dynamic loads in high rise buildings. Calculated gravity load deformations in buildings can vary depending upon the analysis technique used (e.g with or without construction stage analysis). Accurate modeling of vertical displacements is critical in tall buildings.
 
-🌟 These effects are can be effectively studied with column vertical displacement plots generated with matplotlib. The building elevation on y axis vs vertical deformations on x axis like in the image below: <br>
+🌟 These effects are can be effectively studied with column vertical displacement plots generated with matplotlib. The building elevation on `y-axis` vs vertical deformations on `x-axis` like in the image below: <br>
 
 
 # Requirements
@@ -30,7 +30,7 @@ The elastic strain or vertical displacement can be calculated with Hooke's Law a
 $\epsilon = {\phi \over E}$
 
 where:
-$\phi$ is the stress calculated as $F \over A$
+$\phi$ is the stress calculated as $F \over A$ <br>
 $E$  is the young's modulus
 
 
