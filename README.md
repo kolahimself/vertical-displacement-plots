@@ -9,7 +9,7 @@
 These results could be in form of excel tables which could be further manipulated with python pandas, a few API python functions for extracting such results from ETABS have been developed as alternatives.
 
 - 🌟 Matplotlib library for making graph/data visualizations. Check out more about this python package at https://matplotlib.org/
-- 🌟 Pandas library for dealing with tabular data (OPTIONAL). See more here https://pandas.pydata.org/ (OPTIONAL)
+- 🌟 Pandas library for dealing with tabular data. See more here https://pandas.pydata.org/ (OPTIONAL)
 - 🌟 Numpy library for faster capability when dealing with large data. See more here: https://numpy.org/ (OPTIONAL)
 - 🌟 Jupyter Notebook for easier workflows. See more here https://jupyter.org/ (OPTIONAL)
 
@@ -27,11 +27,11 @@ Vertical Displacements (UZ) (columns, walls... whatever vertical element in stud
 - calculated manually and inputed into python lists, numpy array, pandas series/ dataframes
 
 The elastic strain or vertical displacement can be calculated with Hooke's Law as: <br>
-$\epsilon = {\phi \over E}$
+> $\epsilon = {\phi \over E}$
 
-where:
-$\phi$ is the stress calculated as $F \over A$ <br>
-$E$  is the young's modulus
+> where:
+> $\phi$ is the stress calculated as $F \over A$ <br>
+> $E$  is the young's modulus
 
 
 A simplified template workflow in form of jupyter notebooks is included in this repo. Although the steps are general, variables, methods and functions can be modified to suit user needs.
