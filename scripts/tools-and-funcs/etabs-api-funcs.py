@@ -107,3 +107,47 @@ def jointDisp_export(SapModel, savepath):
                                                       FieldKeyList = fieldList,
                                                       GroupName = 'All',
                                                       csvFilePath = savepath);
+def columns(SapModel):
+    """
+    Returns a list of all column unique names from the etabs model,
+    and all column end points of the Etabs model
+    
+    Parameters:
+    -----------
+        :param SapModel: cOAPI indicator
+    
+    Returns:
+    out: columns: list
+         joints: set
+    """
+    
+    # Extract all the frame unique names from Etabs
+    frames = SapModel.FrameObj.GetAllFrames()[1]
+    
+    # Extract all the frame end points from Etabs
+    pointName1 = SapModel.FrameObj.GetAllFrames()[3]
+    pointName2 = SapModel.FrameObj.GetAllFrames()[4]
+    
+    # Extract all the frame joint geometry from Etabs
+    point1X = SapModel.FrameObj.GetAllFrames()[6]
+    point1Y = SapModel.FrameObj.GetAllFrames()[7]
+    point1Z = SapModel.FrameObj.GetAllFrames()[8]
+    
+    point2X = SapModel.FrameObj.GetAllFrames()[9]
+    point2Y = SapModel.FrameObj.GetAllFrames()[10]
+    point2Z = SapModel.FrameObj.GetAllFrames()[11]
+    
+    # Append all vertical columns into a list, 
+    # Frame is a vertical column if x and y coordinates of the end points are the same
+    # Append the joints of these columns into a list as well
+    columns = []
+    joints = set()
+    for eachframe in frames:
+        i = frames.index(eachframe)
+        j = SapModel.FrameObj.GetPoints(eachframe)[0:2]
+        
+        if [point1X[i], point1Y[i]] == [point2X[i], point2Y[i]]:
+            columns.append(eachframe)
+            joints.update(j)
+    
+    return (columns, joints)
