@@ -10,7 +10,7 @@ These results could be in form of excel tables which could be further manipulate
 
 - 🌟 Matplotlib library for making graph/data visualizations. Check out more about this python package at https://matplotlib.org/
 - 🌟 Pandas library for dealing with tabular data. See more here https://pandas.pydata.org/ (OPTIONAL)
-- 🌟 Numpy library for faster capability when dealing with large data. See more here: https://numpy.org/ (OPTIONAL)
+- 🌟 Numpy library for faster capability when dealing with large data. See more here: https://numpy.org/ 
 - 🌟 Jupyter Notebook for easier workflows. See more here https://jupyter.org/ (OPTIONAL)
 
 # Workflow
@@ -44,4 +44,4 @@ A simplified template workflow in form of jupyter notebooks is included in this 
 - https://www.researchgate.net/figure/The-vertical-and-horizontal-roof-displacement-of-the-super-tall-building-subjected-to_fig2_237047370
 
 
-This python scripts and notebooks in this repository are free and open to contributions and modifications. Cheers 🥂
+The python scripts and notebooks in this repository are free and open to contributions and modifications. Cheers 🥂
